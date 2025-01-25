@@ -1,0 +1,70 @@
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: #fff; /* White background for sidebar */
+    color: #333; /* Dark font color for better readability */
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 78px; /* Adjust margin to move sidebar below the navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh; /* Full viewport height */
+    position: fixed; /* Sidebar stays fixed on the left */
+    top: 0;
+    left: 0;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.1); /* Adds soft shadow effect */
+    border-radius: 8px; /* Curved edges */
+    z-index: 100; /* Make sure it stays above other content */
+  }
+  
+  /* Sidebar Heading */
+  .sidebar h3 {
+    color: #2c3e50; /* Dark color for headings */
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px; /* Larger font size for better readability */
+  }
+  
+  /* Component Styling */
+  .component {
+    background-color: #f7f7f7; /* Light grey background for the components */
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    width: 80%;
+    border-radius: 8px; /* Rounded edges */
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #2c3e50; /* Dark border for components */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effect */
+    font-weight: normal;
+    font-size: 16px;
+  }
+  
+  .component:hover {
+    background-color: #ecf0f1; /* Hover effect with lighter grey */
+    transform: scale(1.03); /* Slight zoom effect on hover */
+  }
+  
+  /* Component Text */
+  .component p {
+    margin: 0;
+    color: #333; /* Dark text color inside components */
+  }
+  
+  /* Component Drag Handle (equals sign) */
+  .component .drag-handle {
+    font-size: 20px; /* Handle size */
+    cursor: pointer; /* Indicate drag action */
+    color: #777; /* Light grey for the drag handle */
+  }
+  
+  /* Component Header (for example, Input, LLM Engine) */
+  .component-header {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  

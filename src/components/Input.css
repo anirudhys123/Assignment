@@ -1,0 +1,46 @@
+/* Input Card Styling */
+.input-card {
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+  width: 250px; /* Fixed width for the card */
+  margin-bottom: 20px;
+  text-align: center;
+  border: 2px solid #bdc3c7; /* Light border for the card */
+}
+
+/* Input Card Header */
+.input-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50; /* Dark color for header */
+  margin-bottom: 10px;
+  text-transform: uppercase; /* Uppercase text as per the design */
+}
+
+/* Input Card Description */
+.input-description p {
+  font-size: 14px;
+  color: #7f8c8d; /* Light gray color for description */
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Input Field Styling */
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #bdc3c7;
+  box-sizing: border-box;
+  color: #333;
+  text-align: center; /* Center align the input text */
+}
+
+/* Placeholder text styling */
+.input-field input::placeholder {
+  color: #7f8c8d;
+  text-align: center; /* Center align placeholder text */
+}

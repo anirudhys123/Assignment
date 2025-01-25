@@ -1,0 +1,59 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* White background for Navbar */
+  color: #333; /* Dark text for contrast */
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for separation */
+  border-bottom: 2px solid #ddd; /* Subtle border at the bottom */
+}
+
+/* Title in Navbar */
+.navbar-title {
+  font-size: 24px; /* Slightly larger font size for the title */
+  font-weight: bold;
+  color: #333; /* Dark color for the title */
+}
+
+/* Navbar Button Styling */
+.navbar-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-buttons button {
+  padding: 12px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px; /* Ensures button text is easily readable */
+  font-weight: 500; /* Slightly bold text for buttons */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-buttons button:hover {
+  opacity: 0.8;
+}
+
+/* Deploy Button (Gray) */
+.deploy-btn {
+  background-color: #bdc3c7; /* Gray color for Deploy */
+}
+
+.deploy-btn:hover {
+  background-color: #95a5a6; /* Darker gray on hover */
+}
+
+/* Run Button (Green) */
+.run-btn {
+  background-color: #2ecc71; /* Green color for Run */
+}
+
+.run-btn:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}

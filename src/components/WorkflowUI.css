@@ -1,0 +1,145 @@
+/* Main container for the app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Workflow container that holds Sidebar and cards */
+.workflow-container {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 270px; /* Space for sidebar */
+  padding: 20px;
+  flex-wrap: wrap; /* Allow wrapping if screen is too small */
+}
+
+/* Sidebar container */
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 100;
+}
+
+/* Card container for Input, LLM Engine, and Output */
+.cards-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px; /* Space between cards */
+  width: 100%;
+  flex-wrap: wrap; /* Wrap on smaller screens */
+}
+
+/* Input Card Styling */
+.input-card {
+  background-color: #fff;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+  width: 300px; /* Fixed width for the card */
+  text-align: center;
+  border: 2px solid #bdc3c7; /* Light border */
+  margin-top: 20px;
+  margin-left: 75px;
+  height: auto; /* Let the height adjust based on content */
+  max-height: 150px; /* Max height */
+}
+
+/* LLM Card Styling */
+.llm-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+  width: 300px; /* Fixed width for the card */
+  text-align: center;
+  border: 2px solid #bdc3c7;
+  margin-top: 20px;
+  height: auto; /* Let the height adjust based on content */
+  max-height: 450px; /* Max height */
+}
+
+/* Output Card Styling */
+.output-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+  width: 300px; /* Fixed width for the card */
+  text-align: center;
+  border: 2px solid #bdc3c7; /* Light border */
+  margin-top: 20px;
+  height: auto; /* Let the height adjust based on content */
+  max-height: 220px; /* Max height */
+}
+
+/* Common card header */
+.card-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Common card description */
+.card-description p {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Input, LLM, Output fields styling */
+.card-fields input,
+.output-card textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #bdc3c7;
+  box-sizing: border-box;
+  color: #333;
+  margin-bottom: 12px;
+  height: auto; /* Allow textarea to grow based on content */
+}
+
+/* Placeholder text styling */
+.card-fields input::placeholder,
+.output-card textarea::placeholder {
+  color: #7f8c8d;
+}
+/* Positioning the chat bubble at the bottom right of the page */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0084ff; /* Blue background */
+  color: white; /* White text color */
+  padding: 15px;
+  border-radius: 50%; /* Circle shape */
+  font-size: 24px; /* Size of the icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.chat-icon:hover {
+  background-color: #0073e6; /* Darker blue on hover */
+}
